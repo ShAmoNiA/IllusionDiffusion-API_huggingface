@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "0f74feaa-a338-4186-be18-cd58a57e39b7",
+		"name": "IllusionDiffusion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15300769",
+		"_collection_link": "https://lively-space-566396.postman.co/workspace/Post~c6269ebe-db38-4a91-8de3-a05fc4cfc89a/collection/15300769-0f74feaa-a338-4186-be18-cd58a57e39b7?action=share&source=collection_link&creator=15300769"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"type": "file",
+							"src": "/C:/Users/mousa/OneDrive/Pictures/Screenshots/Screenshot 2024-02-10 215902.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://ap123-illusiondiffusion.hf.space/--replicas/a4gtd/upload?upload_id=Parham",
+					"protocol": "https",
+					"host": [
+						"ap123-illusiondiffusion",
+						"hf",
+						"space"
+					],
+					"path": [
+						"--replicas",
+						"a4gtd",
+						"upload"
+					],
+					"query": [
+						{
+							"key": "upload_id",
+							"value": "Parham"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"data\":[\"make it super\",{\"path\":\"/tmp/gradio/08defd2af6f41c27d70f95892f9690d25d4e7636/Screenshot 2024-02-10 215902.png\",\"url\":\"https://ap123-illusiondiffusion.hf.space/--replicas/a4gtd/file=/tmp/gradio/08defd2af6f41c27d70f95892f9690d25d4e7636/Screenshot 2024-02-10 215902.png\",\"orig_name\":\"Screenshot 2024-02-10 215902.png\",\"size\":83751,\"mime_type\":\"\"}],\"event_data\":null,\"fn_index\":3,\"trigger_id\":20,\"session_hash\":\"zuckcgjql0h\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ap123-illusiondiffusion.hf.space/--replicas/a4gtd/run/predict?__theme=light",
+					"protocol": "https",
+					"host": [
+						"ap123-illusiondiffusion",
+						"hf",
+						"space"
+					],
+					"path": [
+						"--replicas",
+						"a4gtd",
+						"run",
+						"predict"
+					],
+					"query": [
+						{
+							"key": "__theme",
+							"value": "light"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"data\":[{\"path\":\"/tmp/gradio/08defd2af6f41c27d70f95892f9690d25d4e7636/Screenshot 2024-02-10 215902.png\",\"url\":\"https://ap123-illusiondiffusion.hf.space/--replicas/a4gtd/file=/tmp/gradio/08defd2af6f41c27d70f95892f9690d25d4e7636/Screenshot 2024-02-10 215902.png\",\"orig_name\":\"Screenshot 2024-02-10 215902.png\",\"size\":83751,\"mime_type\":\"\"},\"make it super\",\"low quality\",7.5,0.8,0,1,1,-1,\"Euler\"],\"event_data\":null,\"fn_index\":4,\"trigger_id\":20,\"session_hash\":\"zuckcgjql0h\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ap123-illusiondiffusion.hf.space/--replicas/a4gtd/queue/join?__theme=light",
+					"protocol": "https",
+					"host": [
+						"ap123-illusiondiffusion",
+						"hf",
+						"space"
+					],
+					"path": [
+						"--replicas",
+						"a4gtd",
+						"queue",
+						"join"
+					],
+					"query": [
+						{
+							"key": "__theme",
+							"value": "light"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "download",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
